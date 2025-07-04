@@ -1,0 +1,43 @@
+/* src/pages/AdminAppointments.css */
+
+.admin-appointments-container {
+  padding: 30px;
+  text-align: center;
+}
+
+.admin-appointments-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.appointments-table {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  border-collapse: collapse;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.appointments-table th,
+.appointments-table td {
+  padding: 14px 18px;
+  border: 1px solid #e0e0e0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.appointments-table th {
+  background-color: #f7f7f7;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .appointments-table th,
+  .appointments-table td {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}
