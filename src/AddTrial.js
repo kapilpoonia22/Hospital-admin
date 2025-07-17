@@ -15,7 +15,7 @@ const AddTrial = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:8000/api/trials', {
+    const res = await fetch('https://hospital-backend-1-nxpm.onrender.com//api/trials', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form)

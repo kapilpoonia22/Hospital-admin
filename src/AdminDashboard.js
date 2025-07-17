@@ -13,7 +13,7 @@ const AdminDashboard = () => {
 
   const fetchAppointments = async () => {
     try {
-      const res = await fetch('http://localhost:8000/api/appointments');
+      const res = await fetch('https://hospital-backend-1-nxpm.onrender.com//api/appointments');
       const data = await res.json();
 
       const today = new Date().toISOString().split('T')[0]; // "YYYY-MM-DD"

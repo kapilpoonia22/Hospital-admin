@@ -6,7 +6,7 @@ const AdminAppointments = () => {
   const [appointments, setAppointments] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:8000/api/appointments')
+    fetch('https://hospital-backend-1-nxpm.onrender.com//api/appointments')
       .then((res) => res.json())
       .then((data) => setAppointments(data))
       .catch((err) => console.error("Error fetching appointments", err));
